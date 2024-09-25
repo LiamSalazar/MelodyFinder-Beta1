@@ -1,0 +1,208 @@
+.form_a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+  width: auto;
+  height: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  max-width: 400px; 
+  margin: 0 auto;
+}
+
+.form_a * {
+  width: 100%;
+}
+
+
+.filas_a{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.form_a:hover {
+  transform: scale(1.05);
+}
+
+#heading_a {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+#heading_a {
+  margin: 2em auto;
+  text-align: center;
+}
+
+.field_a {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+.field_a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 5px;
+  border-color: white;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.juntos_a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 5px;
+  border-color: white;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  width: 100%;
+}
+
+.juntos_a + .juntos_a {
+  margin-left: 10px;
+}
+
+.input-field_a {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.button2_a {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+  float: left;
+}
+
+
+.button2_a:hover {
+  background-color: black;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('Fondo1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.field_a {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.input-icon {
+  margin-right: 10px;
+}
+
+.input-field_a {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button2_c {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block !important;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2_a {
+  padding: 0.8em 1.8em;
+  font-size: 16px;
+}
+
+.combos select {
+  width: 100%;
+  height: 10%;
+  padding: 0.8em 1.8em;
+  font-size: 14px;
+  background: none;
+  color: #616161;
+  border: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 5px;
+  background-image: url("Flecha.png");
+  background-repeat: no-repeat;
+  background-position: right 4% center;
+  padding-left: 4%;
+  background-size: 16px 16px; 
+}
+
+.combos select option {
+  background-color: #212121; 
+  color: #ffffff; 
+}
+
+.combos select option:checked {
+  background-color: #616161; 
+  color: #ffffff; 
+}

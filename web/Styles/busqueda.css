@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&amp;display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    background-color:#272626;
+}
+.contenedor{
+    height:100vh; 
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: minmax(355px, auto) 5% 40%;
+    grid-template-areas: 
+                         "artista artista"
+                         "titulo2 titulo2"
+                         "artista_relacionado artista_relacionado";
+}
+
+.titulo2{
+    grid-area: titulo2;
+    color: #fff;
+}
+
+.artista_buscado{
+    grid-area: artista;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:1fr 1fr ;
+}
+.perfil_artista{
+    border-radius: 20px;
+    background: #3d3d3d;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 11fr 2fr;
+    grid-template-areas: "img_perfil seccion_derecha"
+                         "rating seccion_derecha";
+            
+    gap: 10px;
+}
+.img_perfil{
+    grid-area: img_perfil;
+    border-radius: 20px;
+    background: #1680AC;
+    
+}
+.img_perfil img {
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index:000;
+    
+}
+.seccion_derecha{
+    grid-area: seccion_derecha;
+    display: grid;
+    padding: 15px;
+    gap: 8px;
+    grid-template-rows: 55% 25% 1fr;
+
+}
+.texto{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto h1{
+     color: #fff;
+    font-size: 43px;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+}
+.texto span {
+    font-size: 30px;
+    font-weight: 500;
+}
+.redes_sociales{
+    display :flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 15px;
+     
+}
+    .redes_sociales .tooltip {
+      position: absolute;
+      top: 0;
+      font-size: 14px;
+      background: #fff;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 5px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .redes_sociales .tooltip::before {
+      position: absolute;
+      content: "";
+      height: 8px;
+      width: 8px;
+      background: #fff;
+      bottom: -3px;
+      left: 50%;
+      transform: translate(-50%) rotate(45deg);
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .redes_sociales .icon_rs {
+      position: relative;
+      background: #fff;
+      border-radius: 50%;
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .redes_sociales .icon_rs:hover span,
+    .redes_sociales .icon_rs:hover .tooltip {
+      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .redes_sociales .facebook:hover,
+    .redes_sociales .facebook:hover .tooltip,
+    .redes_sociales .facebook:hover .tooltip::before {
+      background: #1877F2;
+      color: #fff;
+    }
+    .facebook {
+            color: #1877f2 ;  
+        } 
+    .redes_sociales .tiktok:hover,
+    .redes_sociales .tiktok:hover .tooltip,
+    .redes_sociales .tiktok:hover .tooltip::before {
+      background: #010101;
+      color: #fff;
+    }
+    .tiktok {
+            color: #010101;  
+        }
+
+    .redes_sociales .instagram:hover,
+    .redes_sociales .instagram:hover .tooltip,
+    .redes_sociales .instagram:hover .tooltip::before {
+      background: #cc39a4;
+      color: #fff;
+    }
+     .instagram {
+            color: #cc39a4;  
+        } 
+    .redes_sociales .spotify:hover,
+    .redes_sociales .spotify:hover .tooltip,
+    .redes_sociales .spotify:hover .tooltip::before {
+      background: #1dd05d;
+      color: #fff;
+    }
+    .spotify {
+            color: #1dd05d;  
+        } 
+    .redes_sociales .icon_rs:hover .tooltip {
+      top: -45px;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+.boton_perfil{
+   object-fit: cover;
+
+   height: 100%;
+   display:flex;
+   justify-content:center;
+}
+
+      .boton_contratar {
+      cursor: pointer;
+      position: relative;
+      padding: 10px 24px;
+      font-size: 18px;
+      color:white;
+      border: 2px solid  rgb(33, 33, 33);
+      border-radius: 34px;
+      background-color:rgb(33, 33, 33);
+      font-weight: 600;
+      transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+      overflow: hidden;
+    }
+
+    .boton_contratar::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 50px;
+      height: 50px;
+      border-radius: inherit;
+      scale: 0;
+      z-index: -1;
+      background-color: white;
+     
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .boton_contratar:hover::before {
+      scale: 3;
+    }
+
+    .boton_contratar:hover {
+      color: rgb(33, 33, 33);
+      border: 2px solid white;
+      scale: 1.1;
+      box-shadow: 0 0px 20px rgba(177, 177, 177,0.4);
+    }
+
+    .boton_contratar:active {
+      scale: 1;
+    }
+.rating_perfil{
+    border-radius: 20px;
+    grid-area: rating;
+    
+}
+.rating_perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating_perfil i{
+    font-size: 35px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.spotify_artista{
+     border-radius: 20px;
+    background: #272626;
+    width: 100%;
+    height: 100%;
+}
+.artista_relacionado{
+    grid-area: artista_relacionado;
+    border-radius: 20px;
+    
+}
+
+.block-card{
+    grid-area: block-card;
+    display: grid;
+    grid-template-columns:repeat(7, 1fr)  ;
+    grid-template-rows:  1fr ;
+    gap: 15px;
+    width: 100%;
+}
+
+.card{
+    height: 90%;
+    width: 100%;
+    position: relative;
+    color: #fff;
+    background: #3d3d3d ;   
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #171616 ;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #171616;
+}
+
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name-profession .profession{
+    font-size:15px;
+    font-weight: 500;
+}
+
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.card .rating i{
+    font-size: 18px;
+    margin: 0 2px;
+    color: #fff;
+}
+
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card .button button{
+    background: #171616;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: transparent;
+}
+.button{
+
+    background: transparent;
+
+}
+.button button:hover{
+    background: #3d3a3a;
+}
+.delet{
+}
+    
+
+/* responsive ------------------------------------------------------------ */ 
+
+@media screen and (max-width:1655px){
+
+.delet_7{
+    display: none;}
+    .block-card{
+    grid-template-columns:repeat(6, 1fr)  ;
+}}
+@media screen and (max-width:1412px){
+    .delet_6{
+    display: none;}
+    .block-card{
+    grid-template-columns:repeat(5, 1fr)  ;
+}}
+@media screen and (max-width:1290px){
+    .delet_5{
+    display: none;}
+    .block-card{
+    grid-template-columns:repeat(4, 1fr)  ;
+}}
+@media screen and (max-width:1000px){
+    .delet_4{
+    display: none;}
+    .block-card{
+    grid-template-columns:repeat(3, 1fr)  ;
+}}
+@media screen and (max-width:750px){
+    .delet_3{
+    display: none;}
+    .block-card{
+    grid-template-columns:repeat(2, 1fr)  ;
+}}
+
+       @media screen and(max-width: 1000px ){}
+
+/* responsive  -----------------------------------------------------------*/

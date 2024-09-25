@@ -1,0 +1,181 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&amp;display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body{
+    background-color:#272626;
+}
+.contenedor{
+    display: grid;
+    grid-template-rows: 5% 120% ;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.contendor-card-generos{
+    display: grid;
+    grid-template-columns:  repeat( 4, 1fr ); 
+    grid-template-rows:25% 25% 25% 25%;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+}
+.card-genero {
+    display: flex;
+    background: brown;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-genero a {
+    padding: 20px;
+    font-weight: 1000;
+    font-size: 24px;
+}
+.card-genero img {
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index:000;
+    
+}
+.card-genero a{
+    color: #fff;
+    z-index:777;
+    position: absolute;
+}
+
+
+section{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper{
+    width: 1600px;
+}
+
+.card{
+
+    position: relative;
+    background: #171616;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+}
+
+section .card .image{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #fff;
+}
+
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #171616;
+}
+
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.name-profession .profession{
+    font-size:15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card .button button{
+    background:  #fff;
+    outline: none;
+    border: none;
+    color: #171616;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: transparent;
+}
+.button{
+    background: transparent;
+}
+.button button:hover{
+    background: #3d3a3a;
+}
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: #fff;
+}
+.swiper-pagination  -bullet {
+    height: 200px;
+    width: 26px;
+    background: brown;
+
+}
+
+.swiper-button-next , .swiper-button-prev {
+    opacity: 0.7;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.swiper-button-next :hover, .swiper-button-prev :hover{
+    opacity: 1;
+    color: #fff;
+}
